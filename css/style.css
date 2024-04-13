@@ -176,6 +176,8 @@ p {
 /* testimonials starts=================== */
 .testimonials {
     background-color: var(--cs-black);
+    min-height: 90vh;
+    overflow: hidden;
 }
 
 .review {
@@ -229,13 +231,46 @@ p {
     padding: 45px 0px;
 } */
 
-.swiper-slide .review_text{
+.swiper {
+    position: relative;
+    overflow: visible;
+}
+
+.swiper-slide {}
+
+.swiper-slide .review_text {
     display: none;
 }
 
-.swiper-slide-active .review_text{
+.swiper-slide-active .review_text {
     display: block;
 }
+
+.swiper-slide-active .review_text {
+    position: absolute;
+    bottom: -100%;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-button-next{
+    right: 0!important;
+}
+
+.swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-next:after {
+    content: '';
+}
+
+.navigation{
+    position: absolute;
+    bottom: -50%;
+}
+
 /* testimonials ends=================== */
 
 /* brands starts=================== */
