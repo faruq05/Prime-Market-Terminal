@@ -229,6 +229,13 @@ p {
     padding: 45px 0px;
 } */
 
+.swiper-slide .review_text{
+    display: none;
+}
+
+.swiper-slide-active .review_text{
+    display: block;
+}
 /* testimonials ends=================== */
 
 /* brands starts=================== */
