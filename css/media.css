@@ -128,6 +128,8 @@
     }
 
     .hero_book img {
+
+        position: absolute;
         width: 90%;
         margin: auto;
         margin-top: -35px;
